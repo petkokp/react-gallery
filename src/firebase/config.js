@@ -1,3 +1,7 @@
+import * as firebase from 'firebase/app';
+import 'firebase/storage';
+import 'firebase/firestore';
+
 var firebaseConfig = {
     apiKey: "AIzaSyAvtB8X2BGCoLbOA3Y2pLz714DZPLVK4cE",
     authDomain: "react-gallery-11d0a.firebaseapp.com",
@@ -11,3 +15,8 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+
+const storage = firebase.storage();
+const firestore = firebase.firestore();
+
+export { storage, firestore };
