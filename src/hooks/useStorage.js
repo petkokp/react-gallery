@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { storage } from '../firebase/config';
+import { projectStorage } from '../firebase/config';
 
 const useStorage = (file) => {
     const [progress, setProgress] = useState(0);
