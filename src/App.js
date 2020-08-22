@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Title/>
       <UploadForm/>
+      <ImageGrid />
     </div>
   );
 }
