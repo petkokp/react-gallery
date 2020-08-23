@@ -9,6 +9,7 @@ function App() {
       <Title/>
       <UploadForm/>
       <ImageGrid />
+      <Modal />
     </div>
   );
 }
