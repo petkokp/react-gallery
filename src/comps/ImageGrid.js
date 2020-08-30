@@ -18,6 +18,7 @@ const ImageGrid = ({ setSelectedImg }) => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.8 }}
                     />
+                    <button class="btn">Delete</button>
                 </motion.div>
             ))}
         </div>
