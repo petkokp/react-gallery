@@ -115,8 +115,8 @@ label:hover{
     left: 20%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     font-size: 16px;
     padding: 12px 24px;
     border: none;
