@@ -7,6 +7,11 @@ import 'firebase/firestore';
 
 const ImageGrid = ({ setSelectedImg }) => {
     const { docs } = useFirestore('images');
+
+    function deleteClick(e) {
+        let id = e.target.id;
+        firebase.firestore().collection("images").doc(id).delete();
+    }
     
     return (
         <div className="img-grid">
