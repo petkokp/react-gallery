@@ -1,6 +1,9 @@
 import React from 'react';
 import useFirestore from '../hooks/useFirestore';
 import { motion } from 'framer-motion';
+import * as firebase from 'firebase/app';
+import 'firebase/storage';
+import 'firebase/firestore';
 
 const ImageGrid = ({ setSelectedImg }) => {
     const { docs } = useFirestore('images');
@@ -18,7 +21,7 @@ const ImageGrid = ({ setSelectedImg }) => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.8 }}
                     />
-                    <motion.button class="btn"
+                    <motion.button id={doc.id} className="btn" onClick={deleteClick}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.8 }}
