@@ -10,7 +10,11 @@ const ImageGrid = ({ setSelectedImg }) => {
 
     function deleteClick(e) {
         let id = e.target.id;
-        firebase.firestore().collection("images").doc(id).delete();
+        firebase.firestore().collection("images").doc(id).delete().then(function() {
+            console.log("Document successfully deleted!");
+        }).catch(function(error) {
+            console.error("Error removing document: ", error);
+        });
     }
     
     return (
