@@ -125,3 +125,17 @@ label:hover{
     text-align: center;
 }
 
+input[type="file"]{
+  display: none;
+}
+label{
+  color: white;
+  height: 60px;
+  width: 250px;
+  background-color: black;
+  position: absolute;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
