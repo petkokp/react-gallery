@@ -135,6 +135,10 @@ label{
   background-color: black;
   position: absolute;
   margin:auto;
+  top: 0;
+  bottom: 230px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
