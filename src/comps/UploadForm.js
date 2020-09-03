@@ -22,7 +22,7 @@ const UploadForm = () => {
     return (
         <form>
             <input id="add" type="file" accept="image/*" onChange={changeHandler} />
-            <label for="file">
+            <label for="add">
                 Add a Photo
             </label>
             <div className="output">
