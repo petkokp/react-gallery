@@ -71,10 +71,10 @@ label:hover{
 }
 
 .img-grid{
-  margin: 20px auto;
+  margin: 22px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 42px;
 }
 .img-wrap{
   overflow: hidden;
