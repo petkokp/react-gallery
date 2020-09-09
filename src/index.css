@@ -112,7 +112,7 @@ label:hover{
 .btn{
     position: absolute;
     top: 90%;
-    left: 20%;
+    left: 45%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: black;
